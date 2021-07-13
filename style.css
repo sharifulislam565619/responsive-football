@@ -158,6 +158,55 @@ p{
     height: 427px;
 }
 
+/* contact us section styles */
+#contact{
+    background-color: rgb(228 228 228);
+    margin-bottom: 30px;
+}
+#contact h2{
+    text-align: center;
+    padding-top: 55px;
+   
+}
+.contact-aria{
+   text-align: center;
+  
+  
+}
+input[type=text], select{
+    width: 30%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-size: 20px;
+ 
+}
+input[type=submit] {
+    margin-top: 28px;
+    height: 40px;
+    width: 92px;
+    border: navajowhite;
+    display: block;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-left: 39%;
+    background-color: #ffffff;
+}
+input[type=submit]:hover{
+    background-color: rgb(17, 199, 62);
+    color: white;
+  
+}
+textarea {
+    border-radius: 10px;
+    width: 28%;
+    border: navajowhite;
+}
+
 /* footer styles */
 footer {
     display: flex;
@@ -165,6 +214,7 @@ footer {
     align-content: space-around;
     align-items: center;
    padding-bottom: 50px;
+   
 }
 .logo img{
     width: 443px;
@@ -174,4 +224,7 @@ footer {
     font-size: 19px;
     margin-right: 18px;
     color: rgb(157, 157, 158);
+}
+.social-icon a:hover{
+    color: blue;
 }

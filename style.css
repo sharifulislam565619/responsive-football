@@ -1,0 +1,177 @@
+/*-------------------------------------
+    google fonts 
+ --------------------------------------*/
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.container{
+    width: 1164px;
+    margin: 0 auto;
+}
+/*---------------------------------------
+    header styles 
+  --------------------------------------*/
+  header{
+      background-color: #2D25A0;
+      padding-bottom: 50px;
+      margin-bottom: 70px;
+     
+  }
+  nav{
+      display: flex;
+      justify-content: space-between;
+      width: 1164px;
+      align-items: center;
+      margin: 0 auto;
+      margin-bottom: 40px;
+      padding-top: 30px;
+  }
+
+  .menu ul{
+     display: flex;
+     margin-left: -45px;
+  }
+  .menu ul li{
+      list-style: none;
+  }
+  .menu ul li a{
+      text-decoration: none;
+      font-size: 16px;
+      color: #ffffff;
+      margin-right: 26px;
+      padding: 5px 10px;
+      border-radius: 10px;
+  }
+  .menu ul li a:hover{
+      color: black;
+      background-color: #ffffff;
+ 
+}
+.profile{
+    display: flex;
+    background-color: #E02C6D;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding: 7px 20px;
+    border-radius: 5px;
+    
+}
+.profile:hover{
+    background-image:linear-gradient(50deg,red,orange) ;
+}
+.profile a{
+    text-decoration: none;
+    color: white;
+}
+.profile img{
+    width: 17px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.banner{
+    display: flex;
+    justify-content:space-around;
+    margin: 0 auto;
+    width: 1164px;
+   
+}
+.banner-title h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    margin-bottom: 27px;
+    color: white;
+}
+.watch{
+    text-decoration: none;
+    background-color:#E02C6D ;
+    font-size: 16px;
+    padding: 10px 20px;
+   color: white;
+    font-weight: 500;
+    margin-right: 8px;
+
+}
+.banner-title i{
+    margin-left: 10px;
+    align-items: center;
+}
+.watch:hover{
+    background-image:linear-gradient(50deg,red,orange) ;
+}
+.thumbnail img{
+    width: 556.01px;
+    height: 438px;
+}
+
+
+/* top players section style  */
+.top-players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 1164px;
+    margin: 0 auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+    margin-bottom: 165px;
+}
+.player{
+     padding: 15px;
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+     border-radius:8px ;
+   
+}
+.player img{
+  width: 100%;
+}
+.player-name{
+    font-size: 28px;
+    margin:8px 0;
+}
+p{
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+/* Highlights section styles */
+
+.live-watch{
+    display: flex;
+    column-gap: 66px;
+    margin-bottom: 158px;
+   
+}
+.live-info h2{
+    font-size: 48px;
+    margin-bottom: 0;
+}
+.highlights-banner img{
+    width: 567px;
+    height: 427px;
+}
+
+/* footer styles */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+   padding-bottom: 50px;
+}
+.logo img{
+    width: 443px;
+    height: 100px;
+}
+.social-icon a{
+    font-size: 19px;
+    margin-right: 18px;
+    color: rgb(157, 157, 158);
+}

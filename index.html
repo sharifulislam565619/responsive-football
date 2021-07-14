@@ -16,7 +16,7 @@
     </head>
     <body>
         <header>
-            <nav>
+            <nav class="container">
                 <div class="menu">
                     <ul>
                         <li><a href="">Home</a></li>
@@ -31,13 +31,13 @@
                     <a href="#">Login</a>
                 </div>
             </nav>
-            <div class="banner">
+            <div class="banner container">
                 <div class="banner-title">
                     <h1>
                         Conmebol<br />
                         Copa America 2021
                     </h1>
-                    <a class="watch" href="#"
+                    <a target="_blank" class="watch-btn" href="https://www.google.com/search?q=copa+america+live+football&sxsrf=ALeKk01RxpbC2IT33Rb0EmW_OBSEavx2cg:1626246621448&source=lnms&tbm=vid&sa=X&ved=2ahUKEwjqvsDhgOLxAhUnlEsFHdbBAeEQ_AUoAXoECAEQAw&biw=1366&bih=657"
                         >Watch Live <i class="fas fa-arrow-right"></i
                     ></a>
                 </div>
@@ -49,8 +49,9 @@
 
         <main>
             <!-- Internatinal top players section -->
-            <section>
-                <div class="top-players">
+            <section >
+               <article>
+                <div class="top-players container">
                     <div class="player">
                         <img src="images/players/player-1.png" alt="" />
                         <h2 class="player-name">Neymar Jr</h2>
@@ -184,9 +185,56 @@
                     </div>
                 </div>
             </section>
+               </article>
 
+            <!-- top clubs section  -->
+            <section >
+                <article class="container club-section">
+                    <h2 class="clubs-title">Top Clubs <hr></h2>
+
+                    <div class="clubs">
+                        <div class="club">
+                            <img src="images/clubs/barcelona.png" alt="barsa">
+                            <h2 class="club-name">Barchelona</h2>
+                            <p class="club-info">Futbol Club Barcelona, commonly referred to as Barcelona and colloquially known as Barça, is a Spanish professional football club based in Barcelona, that competes in La Liga, the top flight of Spanish football. <a href="https://en.wikipedia.org/wiki/FC_Barcelona">wikipedia</a></p>
+                           
+                        </div>
+                        <div class="club">
+                            <img src="images/clubs/arsenal.png" alt="barsa">
+                            <h2 class="club-name">Arsenal</h2>
+                            <p class="club-info">Arsenal Football Club is a professional football club based in Islington, London, England. Arsenal plays in the Premier League, the top flight of English football. <a href="https://en.wikipedia.org/wiki/Arsenal_F.C.">wikipedia</a></p>
+                           
+                        </div>
+                        <div class="club">
+                            <img src="images/clubs/Chelsea_FC.png" alt="barsa">
+                            <h2 class="club-name">Chelsea F.C</h2>
+                            <p class="club-info">Chelsea Football Club is an English professional football club based in Fulham, West London. Founded in 1905, the club competes in the Premier League, the top division of English football.a<a href="https://en.wikipedia.org/wiki/Chelsea_F.C.">wikipedia</a></p>
+                           
+                        </div>
+                        <div class="club">
+                            <img src="images/clubs/manchester-city.png" alt="barsa">
+                            <h2 class="club-name">Manchester City</h2>
+                            <p class="club-info">Manchester City Football Club is an English football club based in Manchester that competes in the Premier League, the top flight of English football. Founded in 1880 as St. Mark's, it became Ardwick Association Football Club in 1887 and Manchester City in 1894<a href="https://en.wikipedia.org/wiki/Manchester_City_F.C.">wikipedia</a></p>
+                           
+                        </div>
+                        <div class="club">
+                            <img src="images/clubs/manchester-united.png" alt="barsa">
+                            <h2 class="club-name">Manchester United F.C.</h2>
+                            <p class="club-info">Futbol Club Barcelona, commonly referred to as Barcelona and colloquially known as Barça, is a Spanish professional football club based in Barcelona, that competes in La Liga, the top flight of Spanish football. <a href="https://en.wikipedia.org/wiki/Manchester_United_F.C.">wikipedia</a></p>
+                           
+                        </div>
+                        <div class="club">
+                            <img src="images/clubs/real.png" alt="barsa">
+                            <h2 class="club-name">Real madrid</h2>
+                            <p class="club-info">Real Madrid Club de Fútbol, commonly referred to as Real Madrid, is a Spanish professional football club based in Madrid. Founded on 6 March 1902 as Madrid Football Club, the club has traditionally worn a white home kit since inception <a href="https://en.wikipedia.org/wiki/Real_Madrid_CF">wikipedia</a></p>
+                           
+                        </div>
+                    </div>
+
+                </article>
+            </section>
             <!-- Copa America Football Highlights section -->
-            <section class="container">
+            <section class="container Highlights">
                 <div class="live-watch">
                     <div class="live-info">
                         <h2>
@@ -202,7 +250,7 @@
                             record-equalling 15th Copa America. This is Messi's
                             first Copa title and even Marad.
                         </p>
-                        <a class="watch" href="#"
+                        <a target="_blank" class="watch-btn" href="https://www.google.com/search?q=copa+america+live+football&sxsrf=ALeKk01RxpbC2IT33Rb0EmW_OBSEavx2cg:1626246621448&source=lnms&tbm=vid&sa=X&ved=2ahUKEwjqvsDhgOLxAhUnlEsFHdbBAeEQ_AUoAXoECAEQAw&biw=1366&bih=657"
                             >Watch Now <i class="fas fa-arrow-right"></i
                         ></a>
                     </div>
@@ -212,6 +260,7 @@
                 </div>
             </section>
 
+            
             <!-- contact us section  -->
             <section id="contact">
                 <h2>Contact Us</h2>
@@ -231,7 +280,7 @@
                 </div>
             </section>
         </main>
-        <footer class="container">
+        <footer class="container my-footer">
             <div class="logo">
                 <img src="images/Logo.png" alt="logo" />
             </div>

@@ -12,7 +12,10 @@ body{
 }
 .container{
     width: 1164px;
-    margin: 0 auto;
+    
+}
+a{
+    text-decoration: none;
 }
 /*---------------------------------------
     header styles 
@@ -26,7 +29,6 @@ body{
   nav{
       display: flex;
       justify-content: space-between;
-      width: 1164px;
       align-items: center;
       margin: 0 auto;
       margin-bottom: 40px;
@@ -80,8 +82,11 @@ body{
     display: flex;
     justify-content:space-around;
     margin: 0 auto;
-    width: 1164px;
+  
    
+}
+.banner-title{
+   margin-bottom: 30px;
 }
 .banner-title h1 {
     font-style: normal;
@@ -90,7 +95,7 @@ body{
     margin-bottom: 27px;
     color: white;
 }
-.watch{
+.watch-btn{
     text-decoration: none;
     background-color:#E02C6D ;
     font-size: 16px;
@@ -100,11 +105,11 @@ body{
     margin-right: 8px;
 
 }
-.banner-title i{
+.watch-btn i{
     margin-left: 10px;
     align-items: center;
 }
-.watch:hover{
+.watch-btn:hover{
     background-image:linear-gradient(50deg,red,orange) ;
 }
 .thumbnail img{
@@ -117,11 +122,11 @@ body{
 .top-players {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 1164px;
     margin: 0 auto;
     grid-column-gap: 30px;
     grid-row-gap: 27px;
     margin-bottom: 165px;
+  
 }
 .player{
      padding: 15px;
@@ -141,12 +146,56 @@ p{
     opacity: 0.7;
 }
 
-/* Highlights section styles */
+/* top clubs sectioin styles */
+.club-section{
+    margin:0 auto;
+    margin-bottom: 150px;
+}
+.clubs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    margin-bottom: 150px;
+    margin: 0 auto;
+}
+.clubs-title{
+    text-align: center;
+}
+.clubs-title hr{
+    width: 200px;
+    border:1px dashed gray
+}
+.club{
+    text-align: center;
+    box-shadow: 10px 10px 40px rgb(189, 189, 189);
+    padding: 15px;
+    transition-duration:1s ;
+  }
 
+  .club img{ 
+      width: 50%;
+      
+  }
+.club:hover{
+    box-shadow: 10px 10px  30px rgb(189 189 189);
+    transform: scale(110%);
+
+}
+.club-info{
+    text-align: justify;
+}
+
+/* Highlights section styles */
+.Highlights{
+    margin:0 auto;
+}
 .live-watch{
     display: flex;
     column-gap: 66px;
     margin-bottom: 158px;
+    padding: 15px;
+  
    
 }
 .live-info h2{
@@ -208,12 +257,16 @@ textarea {
 }
 
 /* footer styles */
+.my-footer{
+    margin: 0 auto;
+}
 footer {
     display: flex;
     flex-direction: column;
     align-content: space-around;
     align-items: center;
    padding-bottom: 50px;
+ 
    
 }
 .logo img{
@@ -227,4 +280,130 @@ footer {
 }
 .social-icon a:hover{
     color: blue;
+}
+
+
+/*-------------------------------------------- 
+     responsive design 
+ ---------------------------------------------*/
+ 
+/* for teblet */
+@media only screen and (min-width:688px) and (max-width:992px) {
+
+    .container{
+        width: 100%;
+    }
+    .thumbnail img {
+      width: 100%;
+      height: 100%;
+    }
+    .banner {
+        
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+    .top-players, .clubs{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .live-watch{
+        flex-direction: column;
+        grid-row-gap: 20px;
+        padding: 15px;
+    }
+    .highlights-banner img{
+     width: 100%;
+    }
+    nav {
+      
+        flex-direction: column;
+    }
+    .menu ul{
+       
+        flex-direction: column;
+        align-items: center;
+    }
+    input[type=text], select {
+        width: 70%;
+    }
+    textarea {
+       
+        width: 66%;
+        
+    }
+    input[type=submit] {
+        
+        margin-left: 24%;
+       
+    }
+    footer{
+        padding-bottom: 30px;
+    }
+
+    
+}
+
+
+/* for mobile  */
+@media only screen and (max-width:688px) {
+
+    .container{
+        width: 100%;
+    }
+    nav {
+      
+        flex-direction: column;
+    }
+    .banner {
+       
+        flex-direction: column;
+        align-items: center;
+    }
+    .thumbnail img {
+     
+        width: 100%;
+    }
+    .banner-title h1 {
+        font-size: 45px;
+        text-align: center;
+      
+    }
+    .watch-btn {
+         display: block;
+        width: 36%;
+        margin: 50px auto;
+    }
+   
+    .menu ul{
+       
+        flex-direction: column;
+        align-items: center;
+    }
+    .top-players, .clubs{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .live-watch{
+        flex-direction: column;
+        grid-row-gap: 20px;
+        padding: 15px;
+        
+    }
+    .highlights-banner img{
+     width: 100%;
+    }
+    input[type=text], select {
+        width: 60%;}
+
+        textarea {
+        width: 55%;
+          
+        }
+        .logo img {
+     
+            width: 100%;
+        }
+        footer{
+            padding-bottom: 30px;
+        }
+
 }

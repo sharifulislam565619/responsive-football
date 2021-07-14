@@ -118,7 +118,8 @@ a{
 }
 
 
-/* top players section style  */
+/*------------------------ top players section style -------------------------- */
+
 .top-players {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -146,7 +147,8 @@ p{
     opacity: 0.7;
 }
 
-/* top clubs sectioin styles */
+/*----------------------- top clubs sectioin styles -----------------------------*/
+
 .club-section{
     margin:0 auto;
     margin-bottom: 150px;
@@ -186,7 +188,8 @@ p{
     text-align: justify;
 }
 
-/* Highlights section styles */
+/*------------------------ Highlights section styles ---------------------------*/
+
 .Highlights{
     margin:0 auto;
 }
@@ -207,7 +210,8 @@ p{
     height: 427px;
 }
 
-/* contact us section styles */
+/*------------------------ contact us section styles --------------------------*/
+
 #contact{
     background-color: rgb(228 228 228);
     margin-bottom: 30px;
@@ -256,7 +260,8 @@ textarea {
     border: navajowhite;
 }
 
-/* footer styles */
+/*------------------------------- footer styles -----------------------------*/
+
 .my-footer{
     margin: 0 auto;
 }
@@ -286,8 +291,10 @@ footer {
 /*-------------------------------------------- 
      responsive design 
  ---------------------------------------------*/
+
  
-/* for teblet */
+/*------------------------ for teblet -----------------------*/
+
 @media only screen and (min-width:688px) and (max-width:992px) {
 
     .container{
@@ -344,7 +351,8 @@ footer {
 }
 
 
-/* for mobile  */
+/*---------------------------- for mobile ----------------------------------- */
+
 @media only screen and (max-width:688px) {
 
     .container{
